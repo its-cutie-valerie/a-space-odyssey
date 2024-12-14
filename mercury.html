@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mercury - The Smallest Planet</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: white;
+        background: linear-gradient(45deg, #212121, #00ffff);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed orange;;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./jupiter.gif" alt="Mercury" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Mercury: The Speedy Hotshot of the Solar System!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Hey kids! Let’s take a quick trip to Mercury, the coolest hot
+                  planet out there! (Wait, can a planet be cool and hot? Let’s
+                  find out!)
+                </h2>
+                <h3>What’s Mercury All About?</h3>
+                <p>
+                  Mercury is the closest planet to the Sun, which makes it a
+                  total daredevil. It zooms around the Sun faster than any other
+                  planet—88 Earth days for one lap! That’s less than three
+                  months. No wonder it’s called the speedy planet!
+                </p>
+                <h3>Daytime BBQ, Nighttime Freeze!</h3>
+                <p>
+                  Since Mercury is so close to the Sun, its days are super
+                  hot—like, over 800°F (430°C). That’s hotter than your mom’s
+                  oven! But at night, it gets freezing cold, down to -290°F
+                  (-180°C). Brrr! Mercury doesn’t have much of an atmosphere to
+                  keep it warm, so it’s like a giant rocky popsicle when the Sun
+                  goes to bed.
+                </p>
+                <h3>Why So Small, Mercury?</h3>
+                <p>
+                  Mercury is the smallest planet in the Solar System—it’s even
+                  smaller than some moons! Imagine if Earth was a basketball;
+                  Mercury would be more like a baseball. But don’t let its size
+                  fool you—it’s packed with craters and cool rocks from asteroid
+                  crashes. Think of it as a galactic battle scar champion!
+                </p>
+                <h3>No Moon Buddies, No Rings—Just Mercury!</h3>
+                <p>
+                  Unlike Saturn with its fancy rings or Jupiter with its moon
+                  squad, Mercury likes to keep things simple. No moons, no
+                  rings—just raw planetary awesomeness.
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Did you know Mercury’s days are longer than its years? Yep! A
+                  single day on Mercury (sunrise to sunrise) lasts about 176
+                  Earth days. Imagine one day of school lasting half the year!
+                  Yikes!
+                </p>
+                <p>
+                  So there you have it—Mercury, the speedy, rocky little planet
+                  that’s as tough as it is fascinating. Keep exploring, space
+                  cadets! The universe is full of wonders.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

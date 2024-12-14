@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earth - The Ultimate Planet!</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed #ff9900;
+        box-shadow: 0 0 20px #0000ff;
+        color: #ffffff;
+        background: linear-gradient(45deg, #0b3800, #03005c);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed orange;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./earth.gif" alt="Earth" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Earth: The Ultimate All-In-One Planet!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Hey there, space explorers! Let’s give a big shoutout to the
+                  coolest planet in the universe—Earth! That’s right, it’s our
+                  home sweet home, and trust me, it’s one epic place to be.
+                </h2>
+                <h3>Earth: The Goldilocks Planet</h3>
+                <p>
+                  Earth isn’t too hot, isn’t too cold—it’s just right! That’s
+                  why it’s called the Goldilocks Planet. We’ve got water to swim
+                  in, air to breathe, and pizza to eat. (Okay, that last one’s
+                  thanks to us humans, but still!)
+                </p>
+                <h3>What Makes Earth Special?</h3>
+                <p>
+                  Earth is the only planet we know of where life exists. From
+                  tiny bugs to giant whales—and humans like you and me—Earth is
+                  a party of plants, animals, and people. It’s like the ultimate
+                  24/7 Discovery Channel!
+                </p>
+                <h3>Earth’s VIP Feature: Water!</h3>
+                <p>
+                  Earth is a total show-off with its oceans, rivers, and lakes.
+                  About 70% of the planet is covered in water, making it look
+                  like a big blue marble from space. But don’t forget about the
+                  land—mountains, deserts, forests, and even volcanoes make
+                  Earth one wild adventure park.
+                </p>
+                <h3>Spinning Around the Sun</h3>
+                <p>
+                  Earth takes 365 days (a year!) to orbit the Sun. But it’s also
+                  spinning like a ballerina on its own axis, giving us day and
+                  night. One full spin = 24 hours. Cool, huh? Oh, and we’re
+                  zooming around the Sun at 67,000 miles per hour!
+                </p>
+                <h3>Moon Buddy Alert!</h3>
+                <p>
+                  Earth has one moon, and it’s a superstar. It controls ocean
+                  tides, lights up the night, and even inspired some of the
+                  coolest myths and songs. Plus, we’ve landed on it! Take that,
+                  other planets!
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Earth’s atmosphere acts like an invisible shield. It protects
+                  us from harmful space stuff and keeps the planet warm enough
+                  for life. It’s like Earth’s personal superhero cape!
+                </p>
+                <hr />
+                <h1 style="color: red">Earth’s Warning Signal</h1>
+                <p style="color: red">
+                  Earth is amazing, but we’ve got to take care of it. Pollution,
+                  deforestation, and climate change are hurting our planet. So,
+                  let’s all be heroes and recycle, plant trees, and save water.
+                  Small steps can make a big difference!
+                </p>
+                <p>
+                  So there you have it, Earth—the planet with it all: beauty,
+                  brains, and a whole lot of heart. Take a moment to appreciate
+                  it, and remember, <i>there’s no place like home!</i>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

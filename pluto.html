@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pluto - The Dwarf Planet</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: white;
+        background: linear-gradient(45deg, #0b0043, #00395c);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed orange;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./pluto.gif" alt="Pluto" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Pluto: The Little Planet That Could!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Hey there, space adventurers! Ready to meet the most lovable
+                  underdog in the Solar System? Say hello to Pluto, the tiny,
+                  icy world that’s full of surprises.
+                </h2>
+                <h3>Not Just a Planet—A Dwarf Planet!</h3>
+                <p>
+                  Pluto used to be called the ninth planet, but in 2006,
+                  scientists decided it’s actually a dwarf planet. Don’t
+                  worry—Pluto’s still amazing. It’s just part of a special group
+                  of small but mighty worlds out past Neptune, in the Kuiper
+                  Belt. Think of Pluto as the cool kid in the outer solar
+                  neighborhood!
+                </p>
+                <h3>Small but Special</h3>
+                <p>
+                  Pluto is so tiny that it’s smaller than Earth’s Moon! If Earth
+                  were the size of a basketball, Pluto would be about the size
+                  of a ping-pong ball. But don’t let its size fool you—this
+                  little planet is packed with icy mountains, rocky valleys, and
+                  frozen plains. It’s like a winter wonderland in space!
+                </p>
+                <h3>Far, Far Away</h3>
+                <p>
+                  Pluto is so far from the Sun that it takes 248 Earth years to
+                  orbit it once. That’s longer than the United States has been a
+                  country! And because it’s so far, sunlight on Pluto is super
+                  faint—kind of like twilight all the time.
+                </p>
+                <h3>Charon: Pluto’s Partner in Crime</h3>
+                <p>
+                  Pluto has five moons, and the biggest one, Charon, is almost
+                  as big as Pluto itself! The two are like cosmic dance
+                  partners, spinning around each other in space. Scientists
+                  sometimes call Pluto and Charon a "double dwarf planet
+                  system." Fancy, huh?
+                </p>
+                <h3>Heart-Shaped Hello</h3>
+                <p>
+                  In 2015, NASA’s New Horizons spacecraft flew by Pluto and took
+                  the first close-up pictures of this icy world. One of the
+                  coolest discoveries? Pluto has a giant heart-shaped region
+                  called Tombaugh Regio. It’s like Pluto is sending us love from
+                  across the Solar System!
+                </p>
+                <h3>Cold as Ice</h3>
+                <p>
+                  Pluto is one of the coldest places in the Solar System, with
+                  temperatures dropping to a frigid -387°F (-233°C). 🥶 Its
+                  surface is covered in nitrogen, methane, and water ice—making
+                  it sparkle like a frosty gem.
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Pluto’s orbit is a bit wacky—it’s tilted and shaped like an
+                  oval. Sometimes, Pluto gets closer to the Sun than Neptune,
+                  but don’t worry—they’ll never crash. They’ve got their cosmic
+                  dance all figured out!
+                </p>
+                <p>
+                  Pluto might not be a full-fledged planet anymore, but it’s
+                  still a superstar. From its icy heart to its moons and
+                  mysteries, Pluto proves that even the smallest worlds can make
+                  a big impact.
+                </p>
+                <hr />
+                <p>
+                  So there you have it—Pluto, the little planet with a big
+                  personality! Keep exploring, because the universe has plenty
+                  of surprises waiting for YOU.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

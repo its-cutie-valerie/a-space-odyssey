@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neptune - The Windy Wonder</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: white;
+        background: linear-gradient(45deg, #0b0043, #00395c);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed orange;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./neptune.gif" alt="Neptune" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Neptune: The Windy Wonder of the Solar System!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Yo, space cadets! Buckle up and get ready to meet Neptune, the
+                  most mysterious and wildly windy planet in the Solar System.
+                  It’s the farthest planet from the Sun, but it’s still making
+                  waves in the cosmos!
+                </h2>
+                <h3>Big, Blue, and Beautiful</h3>
+                <p>
+                  Neptune is a gorgeous deep blue, thanks to methane gas in its
+                  atmosphere. But it’s not just a pretty face—it’s a massive ice
+                  giant packed with frozen water, ammonia, and methane beneath
+                  its thick, stormy clouds. It’s like the coolest smoothie in
+                  space!
+                </p>
+                <h3>Storm Chasers’ Dream</h3>
+                <p>
+                  Neptune is home to the fastest winds in the Solar System—they
+                  can blow up to 1,200 miles per hour. That’s faster than a
+                  fighter jet! These crazy winds power massive storms, including
+                  the Great Dark Spot, a giant storm as big as Earth that comes
+                  and goes like a cosmic magic trick.
+                </p>
+                <h3>The Farthest Planet</h3>
+                <p>
+                  Neptune orbits super far from the Sun—about 30 times farther
+                  than Earth. Because of this, it’s freezing cold out there,
+                  with temperatures dipping to -373°F (-225°C). And since it’s
+                  so far, a year on Neptune takes 165 Earth years! That’s longer
+                  than a human lifetime. Imagine celebrating your first birthday
+                  at age 165!
+                </p>
+                <h3>Ring-a-Ding-Ding—Again!</h3>
+                <p>
+                  Like its buddy Uranus, Neptune has faint rings made of dust
+                  and ice. They’re not as famous as Saturn’s, but they still
+                  give Neptune some extra cosmic bling.
+                </p>
+                <h3>Moons That Steal the Show</h3>
+                <p>
+                  Neptune has 14 moons, and the star of the show is Triton.
+                  Triton is a total weirdo—it orbits Neptune backward!
+                  Scientists think it was a captured object from the Kuiper
+                  Belt, a region of icy bodies at the edge of the Solar System.
+                  Oh, and Triton has geysers that shoot icy stuff into space.
+                  Talk about making an entrance!
+                </p>
+                <h3>Fast Spins, Long Trips</h3>
+                <p>
+                  A day on Neptune is just 16 hours long, so it’s spinning
+                  pretty fast. But with a year lasting 165 Earth years, Neptune
+                  takes its time making the long trip around the Sun. You’d
+                  definitely have a lot of time for stargazing out there!
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Neptune was discovered before anyone saw it with a telescope!
+                  Astronomers in 1846 noticed its gravity was pulling on Uranus,
+                  so they used math to predict where Neptune would be. Math
+                  saves the day!
+                </p>
+                <p>
+                  Even though we’ve sent spacecraft like Voyager 2 to fly by
+                  Neptune, we’ve barely scratched the surface of its mysteries.
+                  With its wild winds, icy moons, and deep blue beauty, Neptune
+                  is a planet of endless discovery.
+                </p>
+                <hr />
+                <p>
+                  So there you have it—Neptune, the stormy superstar of the
+                  Solar System! Keep dreaming big, because the universe is
+                  waiting for YOU to explore it.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

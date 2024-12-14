@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jupiter - The King</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: white;
+        background: linear-gradient(45deg, #433d00, #5c3d00);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed #ff9900;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./jupiter.gif" alt="Jupiter" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Jupiter: The King of the Solar System!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Hey, cosmic explorers! Ready to meet the biggest, baddest
+                  planet in the Solar System? Say hello to Jupiter, the king of
+                  the planets, with a crown made of swirling storms!
+                </h2>
+                <h3>Size Matters!</h3>
+                <p>
+                  Jupiter is a giant—it’s so big, all the other planets could
+                  fit inside it. (Yep, all of them!) It’s about 11 times wider
+                  than Earth, and if Earth were the size of a grape, Jupiter
+                  would be a watermelon. Talk about a heavyweight champion!
+                </p>
+                <h3>The Great Red Spot: Jupiter’s Forever Storm</h3>
+                <p>
+                  Jupiter is famous for its Great Red Spot, a humongous storm
+                  that’s been raging for over 300 years. It’s like the biggest
+                  hurricane you can imagine—but it’s twice as wide as Earth! And
+                  get this: it’s shrinking! Scientists think it might disappear
+                  someday, but for now, it’s Jupiter’s most famous feature.
+                </p>
+                <h3>Striped and Stunning</h3>
+                <p>
+                  Look closely, and you’ll see Jupiter’s cloud stripes, made of
+                  swirling gases like hydrogen and helium. These clouds make the
+                  planet look like a cosmic candy cane! But don’t let its sweet
+                  looks fool you—it’s one stormy ball of gas. No solid ground
+                  here, folks!
+                </p>
+                <h3>Moon Mania</h3>
+                <p>
+                  Jupiter doesn’t just have one or two moons—it has 92 moons
+                  (and counting)! The most famous are the Galilean moons, named
+                  after Galileo, who spotted them way back in 1610 (cool guy,
+                  remember it as if it was yesterday when he discovered them).
+                </p>
+                <h3>Fastest Spinner in the Solar System</h3>
+                <p>
+                  Jupiter might be massive, but it spins like a top! A single
+                  day on Jupiter (one full spin) is just 10 hours. That’s crazy
+                  fast for something so huge! But its year? A loooong 12 Earth
+                  years. Can you imagine waiting 12 years for your next
+                  birthday?
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Jupiter’s gravity is like a giant space vacuum cleaner! It
+                  pulls in comets and asteroids that could otherwise crash into
+                  Earth. Thanks for being our protector, Jupiter!
+                </p>
+                <p>
+                  Saturn gets all the ring credit, but Jupiter has rings, too!
+                  They’re just super faint and made of tiny dust particles. Not
+                  flashy, but still fabulous.
+                </p>
+                <hr />
+                <p>
+                  So there you have it—Jupiter, the king of the planets, with
+                  its storms, moons, and cosmic swagger. Keep reaching for the
+                  stars, because the universe is full of wonders like this!
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

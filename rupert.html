@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./rupert.gif" type="image/x-icon">
+  <title>Rupert - The Last Stop</title>
+  <style>
+    body {
+                background: url('./background.png'), black;
+                background-repeat: repeat;
+                color: white;
+                padding: 10px;
+                height: 100%;
+                text-align: center;
+                font-family: Comic Sans MS, Arial, sans-serif;
+            }
+    img {
+      border: 2px solid #FF9900;
+    }
+    a {
+      color: #FF9900;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    td {
+      vertical-align: top;
+    }
+    .text-table {
+      width: 100%;
+      text-align: center;
+      border: 5px dashed #ff9900;
+      box-shadow: 0 0 20px #0000ff;
+      color: #ffffff;
+      background: linear-gradient(45deg, #0b0043, #00395c);
+      animation: colorChange 2s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <a href="./index.html" style="text-decoration:underline; border: 3px dashed #ff9900;padding: 5px;">Back to Planets</a>
+  </p>
+  <table>
+    <tr>
+      <!-- Left column for the image -->
+      <td class="left">
+        <img src="./rupert.gif" alt="rupert" style="width: 500px;">
+      </td>
+      <!-- Right column for the text -->
+      <td class="right">
+        <table class="text-table">
+          <tr>
+            <h1>Rupert: The Imaginary Planet You’ll Never Visit!</h1>
+          </tr>
+          <tr>
+            <td>
+              <h2>Greetings, intrepid space travelers! Ready to explore a world so mysterious it doesn’t even exist? That’s right, we’re talking about Rupert, the not-quite-there planet from the Hitchhiker’s Guide to the Galaxy universe!
+                <h3>
+                  The Planet That Isn’t
+              </h3>
+              <p>
+                Rupert is an imaginary planet mentioned in the Hitchhiker’s Guide to the Galaxy as an example of what not to name a planet. Let’s face it—Rupert sounds more like your dad’s accountant than a place where alien civilizations thrive. But don’t let its ordinary name fool you; the idea of Rupert proves one thing: even imaginary planets deserve some love.
+              </p>
+              <h3>What’s on Rupert?
+              </h3>
+              <p>Nobody knows! Maybe Rupert is a world of endless tea parties, where biscuits rain from the sky and everyone debates the correct way to pronounce “scone.” Or maybe it’s the home of existentially confused lifeforms wondering if they’re real. (Spoiler: they’re not.) </p>
+              <h3>A Hitchhiker’s Delight
+              </h3>
+              <p>Douglas Adams, the brilliant mind behind the Hitchhiker’s Guide, tossed Rupert into the narrative as a bit of satirical flair. It’s a reminder that the universe is vast, weird, and full of silliness. If there’s a moral to Rupert’s existence, it’s this: don’t take the cosmos—or yourself—too seriously.</p>
+              <hr>
+              <h3>Fun Fact to Share with Your Friends:</h3>
+              <p>Rupert might not be real, but its name has inspired fans to imagine their own ridiculous planets. From Steve, the planet with talking squirrels, to Barbara, the world made of jelly, Rupert’s legacy lives on in our imaginations.</p>
+              <p>In a universe where towels are essential survival tools and the number 42 is the ultimate answer, Rupert stands as a beacon of creativity. Whether it’s a joke, a jab, or just a fun thought experiment, Rupert reminds us that sometimes, it’s okay to make stuff up. After all, reality is overrated.</p>
+              <hr>
+              <p>So, grab your towel, don’t panic, and keep dreaming big, because the universe is full of wonders—both real and imagined. </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+  <script>
+    document.onmousemove = function (e) {
+      var trail = document.createElement("div");
+      trail.style.position = "absolute";
+      trail.style.top = e.pageY + "px";
+      trail.style.left = e.pageX + "px";
+      trail.style.width = "5px";
+      trail.style.height = "5px";
+      trail.style.background = "white";
+      trail.style.borderRadius = "50%";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 500);
+    };
+  </script>
+</body>
+</html>

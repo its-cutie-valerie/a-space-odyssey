@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Venus - The Drama Queen</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: #ffffff;
+        background: linear-gradient(45deg, #212121, #ff8c00);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed orange;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./venus.gif" alt="Venus" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Venus: The Drama Queen of the Solar System!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  Yo, space adventurers! Ready to meet the most stylish planet
+                  in our cosmic neighborhood? Say hello to Venus, the goddess of
+                  beauty (and a bit of attitude)!
+                </h2>
+                <h3>Venus: Earth’s Twin… Or Not?</h3>
+                <p>
+                  Venus is about the same size as Earth—so people call it our
+                  “sister planet.” But don’t be fooled! Venus is way different.
+                  Think of Earth as the chill, friendly sibling, while Venus is
+                  the fiery diva who likes to keep things steamy. Literally!
+                </p>
+                <h3>Hot Enough to Melt Metal!!</h3>
+                <p>
+                  Venus is the hottest planet in the Solar System—even though
+                  it’s not the closest to the Sun! Its thick, poisonous
+                  atmosphere traps heat like a giant greenhouse. How hot are we
+                  talking? Try 900°F (475°C)! That’s hotter than a pizza oven!
+                  Forget sunbathing here; your marshmallows would roast before
+                  you could blink.
+                </p>
+                <h3>The Slow-Mo Spinner</h3>
+                <p>
+                  Venus spins super slowly. A day on Venus (from sunrise to
+                  sunrise) lasts 243 Earth days. Whoa! That’s longer than a
+                  whole year on Venus, which is just 225 Earth days. Oh, and get
+                  this—Venus spins backward compared to most planets! Talk about
+                  marching to its own beat.
+                </p>
+                <h3>Clouds of Doom</h3>
+                <p>
+                  Venus is covered in thick yellow clouds made of sulfuric acid.
+                  Yep, acid rain. Not exactly a great vacation spot! These
+                  clouds also reflect sunlight, making Venus the brightest
+                  planet in the night sky. That’s why ancient people named it
+                  after the goddess of love and beauty.
+                </p>
+                <h3>No Moons, No Rings—Just Venus</h3>
+                <p>
+                  Like its buddy Mercury, Venus doesn’t have any moons or rings.
+                  But who needs accessories when you shine as bright as Venus?
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  If you could stand on Venus (not recommended!), the air
+                  pressure would crush you like a pancake. It’s 90 times
+                  stronger than Earth’s! That’s like being deep underwater
+                  without the water. Scary, huh?
+                </p>
+                <p>
+                  So there you have it—Venus, the fabulous yet fierce planet
+                  that dazzles from a distance but keeps you guessing up close.
+                  Keep reaching for the stars, space explorers!
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

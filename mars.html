@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mars - The Red Rockstar</title>
+  <link rel="icon" href="./rupert.gif" type="image/x-icon">
+  <style>
+    body {
+                background: url('./background.png'), black;
+                background-repeat: repeat;
+                color: white;
+                padding: 10px;
+                height: 100%;
+                text-align: center;
+                font-family: Comic Sans MS, Arial, sans-serif;
+            }
+    img {
+      border: 2px solid orange;
+    }
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    td {
+      vertical-align: top;
+    }
+    .text-table {
+      width: 100%;
+      text-align: center;
+      border: 5px dashed orange;
+      box-shadow: 0 0 20px blue;
+      color: white;
+      background: linear-gradient(45deg, #431600, #5c0000);
+      animation: colorChange 2s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <a href="./index.html" style="text-decoration:underline; border: 3px dashed #ff9900;padding: 5px;">Back to Planets</a>
+  </p>
+  <table>
+    <tr>
+      <!-- Left column for the image -->
+      <td class="left">
+        <img src="./mars.gif" alt="Mars" style="width: 500px;">
+      </td>
+      <!-- Right column for the text -->
+      <td class="right">
+        <table class="text-table">
+          <tr>
+            <h1>Mars: The Red Rockstar of the Solar System!</h1>
+          </tr>
+          <tr>
+            <td>
+              <h2>Yo, space cadets! Let’s blast off to Mars, the planet that’s been rocking the cosmos with its fiery red glow and out-of-this-world mysteries.</h2>
+              <h3>Why So Red, Mars?</h3>
+              <p>
+                Mars is called the Red Planet because of its rusty surface. Yep, the rocks and dirt are covered in iron oxide—basically cosmic rust. So, Mars looks like it’s blushing 24/7. How cute is that?
+              </p>
+              <h3>Earth’s Cool Cousin</h3>
+              <p>Mars is smaller than Earth, but it’s like our cosmic cousin. It has seasons, polar ice caps, and even weather—although its dust storms are more like wild sandblasters! No big deal, just the largest dust storms in the Solar System. Casual.</p>
+              <h3>Home of the Tallest Volcano</h3>
+              <p>Mars is home to <b>Olympus Mons</b>, the biggest volcano in the Solar System. It’s three times taller than Mount Everest! Talk about a planet that likes to show off. Oh, and Mars also has <b>Valles Marineris</b>, a canyon that’s 10 times longer than the Grand Canyon. Adventure planet, anyone?</p>
+              <h3>Two Tiny Moon Buddies</h3>
+              <p>Mars has not one, but two moons: <b>Phobos</b> and <b>Deimos</b>. These little guys are more like space potatoes than round moons, but they’re still super cool. Fun fact: scientists think they were once asteroids Mars snagged with its gravity. Mars is a collector!</p>
+              <h3>Could There Be Aliens?</h3>
+              <p>Mars gets all the hype because it might have had water a long time ago. Where there’s water, there could have been life. No aliens yet, but we’ve sent rovers like Curiosity and Perseverance to explore the Martian surface. Who knows what we’ll find? Maybe tiny Martian penguins? (Okay, not really, but it’s fun to dream!) </p>
+              <hr>
+              <h3>Fun Fact to Share with Your Friends:</h3>
+              <p>Mars is really cold. Like, wear-your-heaviest-space-parka cold. Its average temperature is -80°F (-60°C). Brrr! But since it’s farther from the Sun, a year on Mars is almost twice as long as one on Earth. That’s 687 Earth days! So, you’d get extra time to celebrate your birthday on Mars.</p>
+              <p>Guess what? Scientists and astronauts are dreaming of sending humans to Mars one day. It’s like setting up a second home for Earthlings. You could be part of the team that explores the Red Planet! How’s that for a career goal?</p>
+              <hr>
+              <p>So there you have it—Mars, the rockstar of the Solar System, blazing bright in its rusty glory. Keep dreaming big, space adventurers, because who knows? One day, you might be walking on Mars!</i></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+  <script>
+    document.onmousemove = function (e) {
+      var trail = document.createElement("div");
+      trail.style.position = "absolute";
+      trail.style.top = e.pageY + "px";
+      trail.style.left = e.pageX + "px";
+      trail.style.width = "5px";
+      trail.style.height = "5px";
+      trail.style.background = "white";
+      trail.style.borderRadius = "50%";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 500);
+    };
+  </script>
+</body>
+</html>

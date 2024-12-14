@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Saturn - The Ringed Superstar</title>
+    <link rel="icon" href="./rupert.gif" type="image/x-icon">
+    <style>
+      body {
+        background: url("./background.png"), black;
+        background-repeat: repeat;
+        color: white;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        font-family: Comic Sans MS, Arial, sans-serif;
+      }
+      img {
+        border: 2px solid orange;
+      }
+      a {
+        color: orange;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+      }
+      td {
+        vertical-align: top;
+      }
+      .text-table {
+        width: 100%;
+        text-align: center;
+        border: 5px dashed orange;
+        box-shadow: 0 0 20px blue;
+        color: white;
+        background: linear-gradient(45deg, #433d00, #5c3d00);
+        animation: colorChange 2s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a
+        href="./index.html"
+        style="
+          text-decoration: underline;
+          border: 3px dashed #ff9900;
+          padding: 5px;
+        "
+        >Back to Planets</a
+      >
+    </p>
+    <table>
+      <tr>
+        <!-- Left column for the image -->
+        <td class="left">
+          <img src="./saturn.gif" alt="Saturn" style="width: 500px" />
+        </td>
+        <!-- Right column for the text -->
+        <td class="right">
+          <table class="text-table">
+            <tr>
+              <h1>Saturn: The Ringed Superstar of the Solar System!</h1>
+            </tr>
+            <tr>
+              <td>
+                <h2>
+                  What’s up, space adventurers? Ready to meet the most
+                  blinged-out planet in the galaxy? Say hello to Saturn, the
+                  planet with rings so fabulous it makes all the other planets
+                  jealous!
+                </h2>
+                <h3>The Lord of the Rings</h3>
+                <p>
+                  Saturn’s rings are its claim to fame. They’re made of ice,
+                  rock, and dust, and they sparkle like cosmic diamonds. There
+                  are seven main rings, but they’re actually made up of
+                  thousands of tiny ringlets. It’s like Saturn is wearing the
+                  ultimate space tutu!
+                </p>
+                <h3>Bigger Than You Think!</h3>
+                <p>
+                  Saturn is a gas giant, just like its buddy Jupiter, but it’s
+                  still huge! It’s so big that more than 760 Earths could fit
+                  inside it. And yet, it’s the lightest planet in the Solar
+                  System—it would float in water if you could find a bathtub big
+                  enough!.
+                </p>
+                <h3>Fast Spinner, Long Trip</h3>
+                <p>
+                  A day on Saturn? Blink, and you’ll miss it—it’s just 10.5
+                  hours long! But a year? Saturn takes 29.5 Earth years to go
+                  around the Sun. Imagine waiting three decades for your next
+                  birthday party.
+                </p>
+                <h3>Moon Madness</h3>
+                <p>
+                  Saturn doesn’t just have a few moons—it has 146 moons and
+                  counting! The most famous one is <b>Titan</b>, a massive moon
+                  with rivers and lakes of liquid methane. (Yep, it’s like a
+                  giant cosmic gas station!) Another cool moon is
+                  <b>Enceladus</b>, which has icy geysers that might even hide
+                  an ocean under its surface. Alien surfers, anyone?
+                </p>
+                <h3>The Gas Giant Life</h3>
+                <p>
+                  Saturn is mostly made of hydrogen and helium, so there’s no
+                  solid ground to stand on. If you tried to land, you’d sink
+                  into its thick atmosphere like a marshmallow in hot cocoa. But
+                  you’d better hang on tight, because Saturn’s winds can reach
+                  1,100 miles per hour—talk about a bad hair day!
+                </p>
+                <hr />
+                <h3>Fun Fact to Share with Your Friends:</h3>
+                <p>
+                  Saturn’s rings are super old—like, 4.5 billion years old—but
+                  they won’t last forever. Scientists think they’ll disappear in
+                  about 100 million years. So enjoy the show while it lasts!
+                </p>
+                <p>
+                  Even though Saturn’s rings get all the attention, the planet
+                  itself is a total stunner. Its yellow and gold stripes come
+                  from the gases swirling in its atmosphere, giving it a royal
+                  look fit for a planet with such cosmic swagger.
+                </p>
+                <hr />
+                <p>
+                  So there you have it—Saturn, the superstar of the Solar
+                  System, with its rings, moons, and golden glow. Keep dreaming
+                  big, space cadets, because the universe is full of wonders
+                  waiting for you to explore!
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      document.onmousemove = function (e) {
+        var trail = document.createElement("div");
+        trail.style.position = "absolute";
+        trail.style.top = e.pageY + "px";
+        trail.style.left = e.pageX + "px";
+        trail.style.width = "5px";
+        trail.style.height = "5px";
+        trail.style.background = "white";
+        trail.style.borderRadius = "50%";
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 500);
+      };
+    </script>
+  </body>
+</html>

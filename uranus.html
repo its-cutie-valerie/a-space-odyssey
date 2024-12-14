@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uranus - The Tilted Wonder</title>
+  <link rel="icon" href="./rupert.gif" type="image/x-icon">
+  <style>
+    body {
+                background: url('./background.png'), black;
+                background-repeat: repeat;
+                color: white;
+                padding: 10px;
+                height: 100%;
+                text-align: center;
+                font-family: Comic Sans MS, Arial, sans-serif;
+            }
+    img {
+      border: 2px solid orange;
+    }
+    a {
+      color: orange;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    td {
+      vertical-align: top;
+    }
+    .text-table {
+      width: 100%;
+      text-align: center;
+      border: 5px dashed orange;
+      box-shadow: 0 0 20px blue;
+      color: white;
+      background: linear-gradient(45deg, #0b0043, #00395c);
+      animation: colorChange 2s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <a href="./index.html" style="text-decoration:underline; border: 3px dashed #ff9900;padding: 5px;">Back to Planets</a>
+  </p>
+  <table>
+    <tr>
+      <!-- Left column for the image -->
+      <td class="left">
+        <img src="./uranus.gif" alt="Uranus" style="width: 500px;">
+      </td>
+      <!-- Right column for the text -->
+      <td class="right">
+        <table class="text-table">
+          <tr>
+            <h1>Uranus: The Tilted Wonder of the Solar System!</h1>
+          </tr>
+          <tr>
+            <td>
+              <h2>What’s up, space explorers? Ready to meet the quirkiest planet in the Solar System? Say hello to Uranus—the chill, tilted, and totally unique planet that’s doing its own thing!</h2>
+            <h3>Why So Blue, Uranus?</h3>
+              <p>
+                Uranus is a dreamy blue-green color because its atmosphere is full of methane gas.  Methane absorbs red sunlight and reflects blue, giving the planet its cool glow. It’s like Uranus is wearing the ultimate pair of cosmic shades.
+              </p>
+              <h3>The Sideways Planet
+              </h3>
+              <p>Uranus is a total rebel—it spins on its side! Unlike every other planet, it’s tilted a whopping 98 degrees. Imagine rolling a basketball instead of spinning it, and you’ve got Uranus. Why? Scientists think a giant collision knocked it over billions of years ago. Talk about a wild ride! </p>
+              <h3>Ice Giant Extraordinaire
+              </h3>
+              <p>Uranus is an ice giant, meaning it’s full of frozen water, ammonia, and methane deep inside. It’s also super cold—the coldest planet in the Solar System! Temperatures can drop to a bone-chilling -371°F (-224°C). Time to bundle up!</p>
+              <h3>Ring-a-Ding-Ding!
+              </h3>
+              <p>Wait, Uranus has rings? You bet! It’s rocking 13 faint rings, made of dark particles that are hard to see. They’re not as flashy as Saturn’s, but hey, Uranus keeps it subtle and classy. </p>
+              <h3>27 Moons and Counting</h3>
+              <p>Uranus has 27 moons, and they’re all named after characters from Shakespeare and Alexander Pope. How fancy is that? Some of the coolest ones include
+                <ul>
+                  <li><b>Titania:</b> The biggest moon, named after the queen of fairies.</li>
+                  <li><b>Oberon:</b> Titania’s king, with a surface full of craters.</li>
+                  <li><b>Miranda:</b> The patchwork moon—it looks like it was put together with cosmic glue!</li>
+                </ul>
+              </p>
+              <h3>Long Years, Quick Spins</h3>
+              <p>A day on Uranus is just 17 hours long. But its year? A massive 84 Earth years! That means if you lived there, you might not even see your first birthday. Oh, and because Uranus spins sideways, its poles get 42 years of sunlight and 42 years of darkness. That’s like the ultimate long nap!</p>
+              <hr>
+              <h3>Fun Fact to Share with Your Friends:</h3>
+              <p>Uranus was the first planet discovered with a telescope back in 1781 by William Herschel. Before that, nobody knew it was out there, just chilling in the cosmic shadows.</p>
+              <p>Even though Uranus doesn’t have massive storms or flashy colors, it’s one-of-a-kind. With its tilt, rings, and icy vibe, it’s proof that being different is what makes you shine!</p>
+              <hr>
+              <p>So there you have it—Uranus, the sideways superstar of the Solar System. Keep reaching for the stars, because there’s always more to discover!</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  
+  <script>
+    document.onmousemove = function (e) {
+      var trail = document.createElement("div");
+      trail.style.position = "absolute";
+      trail.style.top = e.pageY + "px";
+      trail.style.left = e.pageX + "px";
+      trail.style.width = "5px";
+      trail.style.height = "5px";
+      trail.style.background = "white";
+      trail.style.borderRadius = "50%";
+      document.body.appendChild(trail);
+      setTimeout(() => trail.remove(), 500);
+    };
+  </script>
+</body>
+</html>
